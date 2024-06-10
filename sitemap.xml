@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+ <url>
+  <loc>https://rashchet-pensii.nedicom.ru/</loc>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+ </url>
+ <url>
+  <loc>https://rashchet-pensii.nedicom.ru/zakazat-rashchet.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>1</priority>
+ </url>
+  <url>
+  <loc>https://rashchet-pensii.nedicom.ru/price.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>0.8</priority>
+ </url>
+  <url>
+  <loc>https://rashchet-pensii.nedicom.ru/obrazec.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>0.8</priority>
+ </url>
+  <url>
+  <loc>https://rashchet-pensii.nedicom.ru/order.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>0.8</priority>
+ </url>
+  <url>
+  <loc>https://rashchet-pensii.nedicom.ru/contacts.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>0.8</priority>
+ </url>
+  <url>
+  <loc>https://rashchet-pensii.nedicom.ru/prostoy-raschet.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>1</priority>
+ </url>
+  <url>
+  <loc>https://rashchet-pensii.nedicom.ru/rasschet.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>1</priority>
+ </url>
+   <url>
+  <loc>https://rashchet-pensii.nedicom.ru/non-disclosure%20policy.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>1</priority>
+ </url>
+   <url>
+  <loc>https://rashchet-pensii.nedicom.ru/oferta.php</loc>
+  <lastmod>2022-06-05T13:35:06+03:00</lastmod>
+  <priority>1</priority>
+ </url>
+</urlset>
