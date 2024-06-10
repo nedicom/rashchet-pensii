@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect("localhost","pfr","pfr","pfr");
+    $con = mysqli_connect("178.208.94.106","pfr","pfr","pfr");
     // Check connection
 	$con->query("SET NAMES 'utf8'");	  
 			  if ($con->connect_error) {
