@@ -139,7 +139,9 @@
 		//перменная текущей пенсии для записи в базу
 		$nowpens = $_POST['nowpens'];
 						
-						$client_id = $_SESSION['client_id'];
+						//$client_id = $_SESSION['client_id'];
+						$client_id = array_key_exists('client_id', $_SESSION) ? $_SESSION['client_id'] : false;
+
 						if (!empty($_POST['gender'])){
 								$sk = $gsk;
 								$gender = $_POST['gender'];

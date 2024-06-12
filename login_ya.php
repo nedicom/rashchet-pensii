@@ -1,6 +1,6 @@
 <?php
 
-	$state = $_GET['state'];
+	//$state = $_GET['state'];
 	
 	if (!empty($_GET['code'])) {
 		// Отправляем код для получения токена (POST-запрос).

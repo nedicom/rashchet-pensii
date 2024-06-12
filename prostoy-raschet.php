@@ -9,7 +9,7 @@
 	
 	include 'form-raschet.php';
 
-	include 'example.php';	
+	include 'src/example.php';	
 		
 	include 'src/footer.php';	
 ?>

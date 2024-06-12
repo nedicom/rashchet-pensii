@@ -1,17 +1,21 @@
 <?php
-	$cookie = 1;
-	setcookie('policy',$cookie,time() + (86400 * 5)); // 86400 = 1 день в секундах
-	session_start();
-	include 'db.php';
-	
+$cookie = 1;
+setcookie('policy', $cookie, time() + (86400 * 5)); // 86400 = 1 день в секундах
+session_start();
+include 'db.php';
+
 echo '<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="'.$description.'">
+    <meta name="description" content="' . $description . '">
     <meta name="author" content="Mark Mina">
     <meta name="generator" content="Hugo 0.84.0">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+        
 	<link rel="icon" href="https://rashchet-pensii.nedicom.ru/favicon.svg" type="image/x-icon">
 	
 	<!-- Yandex.Metrika counter -->
@@ -31,7 +35,7 @@ echo '<!doctype html>
 	<!-- /Yandex.Metrika counter -->
 
 
-    <title>'.$title.'</title>
+    <title>' . $title . '</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -62,10 +66,9 @@ echo '<!doctype html>
 
     
     <!-- Custom styles for this template -->
-    <link href="../product.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
 	<link rel="icon" href="img/favicon.ico" sizes="any">
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 	
 
   </head>';
-  	?>

@@ -6,8 +6,11 @@
 		'response_type' => 'code',
 		'state'         => '123'
 	);
-	If(($_SESSION['default_avatar_id'])){
-		
+
+	$defaultAvatarId = array_key_exists('default_avatar_id', $_SESSION) ? true : false;
+
+	//If(($_SESSION['default_avatar_id'])){
+	If($defaultAvatarId){		
 		$avatar = $_SESSION["default_avatar_id"];
 		$urlmenu = 'logout.php';
 		$voiti = 'выйти';
@@ -21,8 +24,8 @@
 			$urlmenu = 'https://oauth.yandex.ru/authorize?' . urldecode(http_build_query($paramsurl));
 			$voiti = 'войти';
 			$avatarlink = 'https://oauth.yandex.ru/authorize?' . urldecode(http_build_query($paramsurl));
-			$display_name = $_SESSION['display_name'];
-			 
+			$display_name = '';
+			// $display_name = $_SESSION['display_name'];
 	}
 
 	

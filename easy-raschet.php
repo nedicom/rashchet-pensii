@@ -75,7 +75,7 @@
 			</div>
 		';
 	
-	include 'example.php';	
+	include 'src/example.php';	
 	
 	echo'	<div class="px-4 py-2 my-2 text-center">
 				<a class="btn btn-primary  mt-1" href="http://rashchet-pensii.nedicom.ru/examples/rasschet-pensii-obrazec.pdf" target="_blank" role="button"><i class="fa fa-eye" download></i> Смотреть образец расчета</a>
