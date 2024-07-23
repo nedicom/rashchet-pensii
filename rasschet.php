@@ -4,8 +4,7 @@
 	include 'src/meta.php';
 	include 'src/header.php';
     	
-		if (!empty($_POST['gender'])) {
-					
+		if (!empty($_POST['gender'])) {					
 					
 				function pensFond($gender, $sk, $zp, $punkt, $szp, $T, $kv, $pk2, $spk, $ipkn) {
 				global $nadb;
@@ -56,8 +55,14 @@
 					else if ($spk == 118.1){
 						$nadb = 7220.74;
 					}
+					else if ($spk == 123.77){
+						$nadb = 7567.34;
+					}
+					else if ($spk == 133.05){
+						$nadb = 8134.9;
+					}
 					else{
-						$nadb = 6401.10;
+						$nadb = 8134.9;
 					}
 						
 					$propzp = $zp/ $szp;
@@ -162,8 +167,9 @@
 								
 		
 		echo'	<div class="col-md-8 p-3 mx-auto mt-5">
-				<h1 class="display-4 fw-normal">Ваша пенсия<small class="text-muted"> составляет</small></h1>
-				<h1 class="display-4 fw-normal">'.$pensFond.' <small class="text-muted"> рублей</small></h1>
+				<h2 class="fw-normal mb-5">Результаты рассчета</small></h2>
+				<h3 class="fw-normal">Ваша пенсия <small class="text-muted"> составляет</small></h3>
+				<h3 class="display-4 fw-normal">'.$pensFond.' <small class="text-muted"> рублей</small></h3>
 				</div>	
 			';
 			
@@ -171,14 +177,15 @@
 		if($pensFond>$_POST['nowpens']){
 			$raznica = $pensFond - $_POST['nowpens'];
 			$tenyears = $raznica * 120;
-				echo'	<div class="col-md-8 p-3 mx-auto">
-						<h3 class="fw-normal">Разница между пенсией<small class="text-muted"> которую мы посчитали</small></h3>
+				echo'	<div class="col-md-8 p-3 mx-auto">					
+						
+						<h3 class="fw-normal">Разница между пенсией, <small class="text-muted"> которую мы посчитали</small></h3>
 						<h3 class="fw-normal">и пенсией, которую Вы получаете, <small class="text-muted"> составила</small></h3>
-						<h3 class="fw-normal">'.$raznica.' <small class="text-muted"> рублей</small></h3>
+						<h3 class="display-4 fw-normal">'.$raznica.' <small class="text-muted"> рублей</small></h3>
 						</div>
 						<div class="col-md-8 p-3 mx-auto">
-						<h2 class="fw-normal">За 10 лет Вы потеряете<small class="text-muted"> '.$raznica.' * 10 лет * 12 месяцев = </small></h2>
-						<h1 class="display-4 fw-normal"> = '.$tenyears.' <small class="text-muted"> рублей</small></h1>
+						<h3 class="fw-normal">За 10 лет Вы потеряете<small class="text-muted"> '.$raznica.' * 120 месяцев </small></h3>
+						<h3 class="display-4 fw-normal"> '.$tenyears.' <small class="text-muted"> рублей</small></h3>
 						</div>';							
 		}
 		else{
@@ -186,8 +193,8 @@
 			echo'	<div class="col-md-8 p-3 mx-auto">
 						<h3 class="fw-normal">Разница между пенсией<small class="text-muted"> которую мы посчитали</small></h3>
 						<h3 class="fw-normal">и пенсией, которую Вы получаете, <small class="text-muted"> составила</small></h3>
-						<h3 class="fw-normal">'.$raznica.' <small class="text-muted"> рублей в пользу ПФР.</small></h3>
-						<h3 class="fw-normal">Возможно Вы ошиблись в заполнении формы. </h3>
+						<h3 class="fw-normal">'.$raznica.' <small class="text-muted"> рублей в пользу СФР.</small></h3>
+						<h3 class="mt-5 fw-normal">Возможно Вы ошиблись в заполнении формы. </h3>
 						</div>
 						';
 			
@@ -212,14 +219,19 @@
 									$_SESSION['pns'] = $pns;
 									$_SESSION['pensFond'] = $pensFond;
 									
-								echo'		
-									<div class="col-md-8 mb-5 pb-5 container text-center p-3 mx-auto">
-										<h1 class="mb-3 display-4 fw-normal">Что делать?</h1>									
-										<h4 class="mb-3 fw-normal">Подайте заявление в ПФР и предоставьте наш расчет. Чтобы это сделать 
-										войдите на сайт. </h4>									
-										<a class="d-inline-flex m-1 my-5 btn btn-secondary btn-lg d-flex disabled" href="zakazat-rashchet.php" target="_blank"><i class="fa fa-download mx-2"> </i> скачать расчет</a>
+								echo'	
+								<div class="row text-center mx-5">	
+									<div class="col-md-6 p-3 mx-auto">									
+										<h4 class="mb-3 fw-normal">Чтобы сохранить показатели и сравнить их с показателями СФР - войдите на сайт </h4>									
 										<a href="' . $urlmenu . '" class="my-5 d-inline-flex m-1 btn btn-primary btn-lg d-flex" role="button">Войти</a>	
 									</div>
+
+
+									<div class="col-md-6 p-3 mx-auto">									
+										<h4 class="mb-3 fw-normal">Нужна помощь? </br>Обращайтесь </h4>									
+										<a href="orderuslugi.php" class="my-5 d-inline-flex m-1 btn btn-secondary btn-lg d-flex" role="button" >платная консультация</a>
+									</div>
+								</div>	
 									';
 								
 							}

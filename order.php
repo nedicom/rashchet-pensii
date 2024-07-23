@@ -75,16 +75,17 @@
 				else{
 					echo '
 					<div class="d-grid gap-2 col-6 mx-auto">
-					<p itemprop="description" class="lead mt-3">Ваш расчет готов к скачиванию</p>
-					<a class="btn btn-primary btn-lg my-3 w-100" href="http://rashchet-pensii.nedicom.ru/files/download.php" role="button">Скачать</a>
+					<p itemprop="description" class="lead mt-3">Скачать расчет могут только наши клиенты</p>
+					<a class="btn btn-primary btn-lg my-3 w-100 disabled" href="http://rashchet-pensii.nedicom.ru/files/download.php" role="button">Скачать</a>
 					<p>номер заказа - '.$invid.'</p></div>
 					<div class="row">
-						<div class="col-md-6">
-							<a class="btn btn-light btn-lg my-3 w-100" href="examples/Obrazets_Zayavlenie.docx" target="_blank" role="button">образец заявления в ПФР</a>
+						<div class="col-md-6 ">
+							<a class="btn btn-light btn-lg my-3 w-100 " href="examples/Obrazets_Zayavlenie.docx" target="_blank" role="button">образец заявления в СФР</a>
 						</div>	
 
 						<div class="col-md-6">
-							<a class="btn btn-light btn-lg my-3 w-100" href="/prostoy-raschet.php" target="_blank" role="button">рассчитать заново</a>
+							<a class="btn btn-light btn-lg my-3 w-100" href="/prostoy-raschet.php" target="_blank" role="button">рассчитать 
+							заново</a>
 						</div>	
 					</div>
 					';

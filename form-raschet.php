@@ -22,24 +22,23 @@
 				$pns = 0.8;
 				$T = 228;
 				$kv = 10;
-				$pk2 = 600000;
-				$spk = 118.09;
+				$pk2 = 600000;				
 				$ipkn = 20;
-				$nadb = 7220.74;
+				$spk = 133.05;
+				$nadb = 8134.90 ;
 			}
 
 			
 echo '
 
-		<div class="text-center mb-3">
-			<a href="\" class="d-inline-flex m-1 btn btn-primary btn-lg  d-flex" >простой режим</a>
-			<a href="prostoy-raschet.php" class="d-inline-flex m-1 btn btn-primary btn-lg d-flex disabled" role="button" aria-disabled="true">экспертный режим</a>
+		<div class="text-center mb-3" id="choise">
+			<a href="/raschetpage.php/#choise" class="d-inline-flex m-1 btn btn-primary btn-lg  d-flex" >простой режим</a>
+			<a href="/prostoy-raschet.php/#choise" class="d-inline-flex m-1 btn btn-primary btn-lg d-flex disabled" role="button" aria-disabled="true">экспертный режим</a>
+			<a href="orderuslugi.php" class="d-inline-flex m-1 btn btn-secondary btn-lg d-flex" role="button" >платная консультация</a>
 		</div>
 
-	<div class="container mt-5">
+	<div class="container mt-5 col-10">
 	<div class="row">
-		
-		<div class="col-md-10">
 		
 			<form class="row g-3 needs-validation" action="/rasschet.php" method="post">
 			
@@ -63,7 +62,12 @@ echo '
 							<span class="input-group-text">рублей</span>
 						</div>
 					</div>	
-					Ваша средняя зарплата на основании среднемесячного заработка за 5 лет до 2000 года или за 2 года до 2002. Берем из справки от работодателя					
+					<div class="text-center text-muted">
+						<p><small> 
+							Ваша средняя зарплата на основании среднемесячного заработка за 5 лет до 2000 года или за 2 года до 2002. Берем из справки от работодателя					
+						</small></p>
+					</div>
+
 				</div>
 				 
 
@@ -80,9 +84,14 @@ echo '
 							min="1" max="20000" step="1" value="'.$szp.'" required>
 							<span class="input-group-text">рублей</span>
 						</div>
-						<a href="https://nedicom.ru/uslugi/pensionnyy-yurist/razmer-sredney-zarplaty-po-rf" target="_blank">подробнее</a>							 
-					</div>	
-					Средняя зарплата по стране за 5 лет Вашей работы до 2000 года (или 2 года до 2002)					
+						</div>
+					<div class="text-center text-muted">
+						<p><small> 
+					Средняя зарплата по стране за 5 лет Вашей работы до 2000 года (или 2 года до 2002).	
+					<a href="https://nedicom.ru/uslugi/pensionnyy-yurist/razmer-sredney-zarplaty-po-rf" target="_blank">Подробнее</a>							 
+									
+						</small></p>
+					</div>
 				</div>				
 				
 				
@@ -98,8 +107,13 @@ echo '
 							min="0.55" max="0.75" step=".01" value="'.$sk.'" required>
 						</div>						
 					</div>
-					За каждый год до 2002 года, если стажа больше 20 лет (женщины) или 25 лет (мужчины) базовый СК (0,55) увеличивается на 0,01. Максимальный - 0.75					
-				</div>
+					
+						<div class="text-center text-muted">
+							<p><small> 
+								За каждый год до 2002 года, если стажа больше 20 лет (женщины) или 25 лет (мужчины) базовый СК (0,55) увеличивается на 0,01. Максимальный - 0.75					
+							</small></p>
+						</div>
+					</div>
 				
 		
 				<div class="row my-3">					
@@ -113,14 +127,22 @@ echo '
 							<input type="number" id = "pns" name="pns" class="w-50 form-control form-control-lg" 
 							min="0.1" max="1" step=".01" value="0.8" required>
 						</div>
-					<a href="https://nedicom.ru/uslugi/pensionnyy-yurist-simferopol/schitaem-pensiyu-4-proporciya-nepolnogo-stazha#toc--" target="_blank">подробнее</a>
 					</div>	
-						Это показатель, который равен 1, если стаж полный (20 лет для женщий или 25 лет для мужчин)
-				</div>
+
+					
+						<div class="text-center text-muted">
+							<p><small> 
+								Это показатель, который равен 1, если стаж полный (20 лет для женщий или 25 лет для мужчин)
+								<a href="https://nedicom.ru/uslugi/pensionnyy-yurist-simferopol/schitaem-pensiyu-4-proporciya-nepolnogo-stazha#toc--" target="_blank">подробнее</a>
+
+							</small></p>
+						</div>
+
+						</div>
 
 				<div class="row my-3">					
 					<label for="kv" class="col-sm-6 d-flex justify-content-md-end col-form-label col-form-label-lg">
-					Коэффициент валоризации<i class="fa-solid fa-circle-question px-1 pt-1" data-bs-toggle="tooltip" 
+					Стаж до 1991 года (валоризация)<i class="fa-solid fa-circle-question px-1 pt-1" data-bs-toggle="tooltip" 
 					title="Если Вы до 1991 года работали 5 лет, ставьте 5"></i>					
 					</label>		
 										
@@ -130,14 +152,19 @@ echo '
 							min="1" max="50" step="1" value="'.$kv.'" required>
 						</div>
 					</div>
-					Просто укажите количество полных лет стажа до 1991 года. Если не работали ставьте 1					
-				</div>
+					
+					<div class="text-center text-muted">
+						<p><small> 
+							Просто укажите количество полных лет стажа до 1991 года. Если не работали ставьте 1					
+						</small></p>
+					</div>
+					</div>
 				
 				
 				<div class="row my-3">					
 					<label for="opv" class="col-sm-6 d-flex justify-content-md-end col-form-label col-form-label-lg">
 					Ожидаемый период выплаты<i class="fa-solid fa-circle-question px-1 pt-1" data-bs-toggle="tooltip" 
-					title="Обычно составляет 228 месяцев"></i>					
+					title="Обычно составляет 228 месяцев. Меняется для тех кто ушел на пенсию до 2014 года"></i>					
 					</label>		
 										
 					<div class="col-sm-4">
@@ -146,7 +173,14 @@ echo '
 							min="144" max="256" step="1" value="'.$T.'" required>
 						</div>
 					</div>
-					Если не знаете что это, оставьте 228					
+
+
+					<div class="text-center text-muted">
+						<p><small> 
+							Если не знаете что это, оставьте 228	
+						</small></p>
+					</div>
+				
 				</div>
 
 				
@@ -162,9 +196,15 @@ echo '
 							min="0" max="2000000" step="1" value="'.$pk2.'" required>
 							<span class="input-group-text">рублей</span>
 						</div>
-						<a href="https://www.gosuslugi.ru/10042/1/info" target="_blank">Заказать справку</a>
+						</div>
+
+					<div class="text-center text-muted">
+						<p><small> 
+							Сумма страховых взносов в ПФР, начиная с 1 января 2002 года. Можно 
+							<a href="https://www.gosuslugi.ru/10042/1/info" target="_blank">запросить на Госуслугах	</a>						
+						</small></p>
 					</div>
-				Сумма страховых взносов в ПФР, начиная с 1 января 2002 года. Можно запросить на Госуслугах					
+
 				</div>				
 				
 
@@ -180,10 +220,14 @@ echo '
 							min="71.41" max="200.00" step=".01" value="'.$spk.'" required>
 							<span class="input-group-text">рублей</span>
 						</div>
-						<a href="http://www.consultant.ru/document/cons_doc_LAW_43487/93ec715c37e828e4ed3ef6466122001b10ebd725/" target="_blank">подробнее</a>
-					
 					</div>
-				Стоимость определяется Правительтсвом. В 2022 ИПК стоит	118.09 рублей. Детали по ссылке подробнее			
+
+					<div class="text-center text-muted">
+						<p><small> 
+							Стоимость определяется Правительтсвом. Смотрите по ссылке  <a href="http://www.consultant.ru/document/cons_doc_LAW_43487/93ec715c37e828e4ed3ef6466122001b10ebd725/" target="_blank">подробнее</a>						
+						</small></p>
+					</div>
+
 				</div>	
 											
 				<div class="row my-3">					
@@ -201,7 +245,14 @@ echo '
 								</div>
 						</div>
 					</div>
-					Он же пенсионный бал с 2015 года. Смотрите размер в выписке из ИЛС				
+
+					<div class="text-center text-muted">
+						<p><small> 
+							Он же пенсионный бал с 2015 года. Смотрите размер в выписке из ИЛС	
+						</small></p>
+					</div>
+
+								
 				</div>				
 				
 				<div class="row my-3">					
@@ -218,12 +269,16 @@ echo '
 							<div class="valid-feedback">
 								  Looks good!
 								</div>
-						</div>
-						<a href="http://www.consultant.ru/document/cons_doc_LAW_43487/8faa1c749b4c72a8902b50fb3c24c91c0d035b0e/" target="_blank">подробнее</a>
-					
+						</div>						
 					</div>
-						Это обязательная надбавка к пенсии, которая добавляется с 2015 года. В 2022 году составляет 7220.74 рублей 					
-				</div>
+
+					<div class="text-center text-muted">
+						<p><small> 
+							Это обязательная надбавка к пенсии, введена с 2015 года. <a href="http://www.consultant.ru/document/cons_doc_LAW_43487/8faa1c749b4c72a8902b50fb3c24c91c0d035b0e/" target="_blank">подробнее</a>					
+						</small></p>
+					</div>
+
+						</div>
 
 
 				<div class="row my-3">					
@@ -235,7 +290,7 @@ echo '
 					<div class="col-sm-4">
 						<div class="input-group">
 							<input type="number" id = "nowpens" name="nowpens" class="w-50 form-control form-control-lg" 
-							min="3000.00" max="200000.00" step="0.01" value="10000.00" required>
+							min="3000.00" max="200000.00" step="0.01" value="14000.00" required>
 							<span class="input-group-text">рублей</span>
 							<div class="valid-feedback">
 								  Looks good!
@@ -243,7 +298,15 @@ echo '
 						</div>
 						
 					</div>
-					Укажите размер пенсии, который Вы получаете. Если у нас получиться больше, мы расчитаем	разницу.	
+
+					<div class="text-center text-muted">
+						<p><small> 
+							Укажите размер пенсии, который Вы получаете. Мы сравним его с тем, что посчитали.
+						</small></p>
+					</div>
+
+
+						
 				</div>				
 				
 							
@@ -258,7 +321,7 @@ echo '
 			</form>			
 
 			
-		</div>
+	
 	</div>
 </div>
 

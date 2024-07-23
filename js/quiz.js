@@ -47,35 +47,6 @@ const quizArray = [
         options: ["Peripheral", "Clip art", "Highlight", "Execute"],
         correct: "Peripheral",
     },
-    {
-        id: "5",
-        question: "The main computer that stores the files that can be sent to computers that are networked together is:",
-        options: ["Clip art", "Mother board", "Peripheral", "File server"],
-        correct: "File server",
-    }, {
-        id: "6",
-        question: "How can you catch a computer virus?",
-        options: ["Sending e-mail messages", "Using a laptop during the winter", "Opening e-mail attachments", "Shopping on-line"],
-        correct: "Opening e-mail attachments",
-    },
-    {
-        id: "7",
-        question: "Google (www.google.com) is a:",
-        options: ["Search Engine", "Number in Math", "Directory of images", "Chat service on the web"],
-        correct: "Search Engine",
-    },
-    {
-        id: "8",
-        question: "Which is not an Internet protocol?",
-        options: ["HTTP", "FTP", "STP", "IP"],
-        correct: "STP",
-    },
-    {
-        id: "9",
-        question: "Which of the following is not a valid domain name?",
-        options: ["www.yahoo.com", "www.yahoo.co.uk", "www.com.yahoo", "www.yahoo.co.in"],
-        correct: "www.com.yahoo",
-    },
 ];
 
 //Restart Quiz
@@ -116,7 +87,7 @@ nextBtn.addEventListener(
 const timerDisplay = () => {
     countdown = setInterval(() => {
         count--;
-        timeLeft.innerHTML = `${count}s`;
+        timeLeft.innerHTML = `${count}`;
         if (count == 0) {
             clearInterval(countdown);
             displayNext();
@@ -138,7 +109,7 @@ const quizDisplay = (questionCount) => {
 //Quiz Creation
 function quizCreator() {
     //randomly sort questions
-    quizArray.sort(() => Math.random() - 0.5);
+    //quizArray.sort(() => Math.random() - 0.5);
     //generate quiz
     for (let i of quizArray) {
         //randomly sort options
@@ -164,13 +135,34 @@ function quizCreator() {
     }
 }
 
-//Checker Function to check if option is correct or not
+
 function checker(userOption) {
     let userSolution = userOption.innerText;
     let question =
         document.getElementsByClassName("container-mid")[questionCount];
     let options = question.querySelectorAll(".option-div");
 
+    userOption.classList.add("correct");
+    
+
+    //clear interval(stop timer)
+    clearInterval(countdown);
+    //disable all options
+    options.forEach((element) => {
+        element.disabled = true;
+    });
+}
+
+
+//Checker Function to check if option is correct or not
+/*
+function checker(userOption) {
+    let userSolution = userOption.innerText;
+    let question =
+        document.getElementsByClassName("container-mid")[questionCount];
+    let options = question.querySelectorAll(".option-div");
+
+    
     //if user clicked answer == correct option stored in object
     if (userSolution === quizArray[questionCount].correct) {
         userOption.classList.add("correct");
@@ -192,13 +184,14 @@ function checker(userOption) {
         element.disabled = true;
     });
 }
+*/
 
 //initial setup
 function initial() {
     quizContainer.innerHTML = "";
     questionCount = 0;
     scoreCount = 0;
-    count = 11;
+    count = 60;
     clearInterval(countdown);
     timerDisplay();
     quizCreator();
@@ -207,14 +200,20 @@ function initial() {
 
 
 //when user click on start button
+/*
 startButton.addEventListener("click", () => {
     startScreen.classList.add("hide");
     displayContainer.classList.remove("hide");
     initial();
+    
 });
+*/
 
 //hide quiz and display start screen
 window.onload = () => {
-    startScreen.classList.remove("hide");
-    displayContainer.classList.add("hide");
+    //startScreen.classList.remove("hide");
+    //displayContainer.classList.add("hide");
+    displayContainer.classList.remove("hide");
+    scoreContainer.classList.add("hide");
+    initial();
 };

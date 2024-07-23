@@ -34,7 +34,7 @@
 	
 		<nav class="navbar navbar-expand-lg bg-light">
 		  <div class="container-fluid">
-			<a class="navbar-brand px-3" href="/"><i class="fa-solid fa-calculator"></i></a>
+			<a class="navbar-brand px-3" href="/"><img src="img/favicon.svg"  width="32px"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			  <i class="fa-solid fa-bars"></i>
 			</button>
@@ -42,10 +42,10 @@
 			
 			  <ul class="navbar-nav mr-auto col-md-9" itemscope itemtype="http://schema.org/SiteNavigationElement">				
 				<li class="nav-item">
-				  <a itemprop="url" class="nav-link link-secondary" href="order.php">Ваш заказ</a> 
+				  <a itemprop="url" class="nav-link link-secondary" href="order.php">личный кабинет</a> 
 				</li>
 				<li class="nav-item">
-				  <a itemprop="url" class="nav-link link-secondary" href="prostoy-raschet.php">Режим эксперта</a>
+				  <a itemprop="url" class="nav-link link-secondary" href="orderuslugi.php">на консультацию</a> 
 				</li>
 				</ul>	
 				
@@ -53,7 +53,7 @@
 							<li class="nav-item">
 								<a itemprop="url" class="nav-link link-secondary" href="order.php">'.$display_name.'</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item row align-items-center mx-1">
 								<a itemprop="url" class="nav-link link-secondary" href="' . $urlmenu . '">'.$voiti.'</a>
 							</li>
 							<li class="nav-item">

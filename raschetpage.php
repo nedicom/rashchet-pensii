@@ -10,7 +10,7 @@
 	
 	include 'form-prostoy-raschet.php';
 	
-	include 'comment/commentform.php';
+	//include 'comment/commentform.php';
 	
 	include 'src/footer.php';
 	
