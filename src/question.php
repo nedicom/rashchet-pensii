@@ -92,11 +92,11 @@ echo '
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-light" action="src/formsend.php" method="post">
           <div class="form-floating mb-3">
-            <input type="phone" class="form-control" name="phone" id="floatingInput" placeholder="name@example.com">
+            <input type="phone" class="form-control" name="phone" id="floatingInput" placeholder="8 888 8888 888" required>
             <label for="floatingInput">Телефон</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="name" id="floatingPassword" placeholder="Password">
+            <input type="text" class="form-control" name="name" id="floatingPassword" placeholder="Имя" required>
             <label for="floatingPassword">Ваше имя</label>
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">Отправить</button>

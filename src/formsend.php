@@ -1,7 +1,9 @@
 <?php
+$name = $_POST['name'];
+$phone = $_POST['phone'];
 $chat_name = "@MarkAndNastya";
 $token = "7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw";
-$message = "Здравствуйте.\nЭто тестовое сообщение, отправленное ботом с помощью PHP-скрипта.\n\nВсем хорошего дня.";
+$message = "Привет. \nУ нас заявочка с сайта расчет пенсии.\n\nИмя клиента - '.$name.', телефон - '.$phone.'.";
  
 $text = urlencode($message);
 $url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_name}&text={$text}";
