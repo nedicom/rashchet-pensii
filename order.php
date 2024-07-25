@@ -28,6 +28,7 @@
 			//$invid = 280659189;
 			$invid = ($_SESSION['client_id']);
 
+			echo $invid;
 			$query = "SELECT * FROM `users` WHERE client_id = $invid";
 			$result   = mysqli_query($con, $query);
 		
