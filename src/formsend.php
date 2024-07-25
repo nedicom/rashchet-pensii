@@ -22,7 +22,7 @@ curl_close($ch);
 if (isset($_POST['name'])) {
     ?>
     <script type="text/javascript">
-        window.location = "/src/welldonepage.php";
+        window.location = "/welldonepage.php";
     </script>
     <?php
 }
