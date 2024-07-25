@@ -50,7 +50,7 @@
 				</ul>	
 				
 						<ul class="navbar-nav d-flex justify-content-end col-md-3 text-center" itemscope itemtype="http://schema.org/SiteNavigationElement">
-							<li class="nav-item">
+							<li class="nav-item row align-items-center mx-1">
 								<a itemprop="url" class="nav-link link-secondary" href="order.php">'.$display_name.'</a>
 							</li>
 							<li class="nav-item row align-items-center mx-1">

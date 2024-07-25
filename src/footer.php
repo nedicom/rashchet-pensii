@@ -29,7 +29,6 @@ echo '
     <div class="col-12 col-md">
       <h5>Дополнения</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="order.php" >Образец расчета</a></li>
         <li><a class="link-secondary" href="examples/soprovoditelnaya.pdf" download>Образец заявления</a></li>
         
       </ul>

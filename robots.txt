@@ -26,6 +26,9 @@ sitemap: https://rashchet-pensii.nedicom.ru/sitemap.xml
 Disallow:
 Clean-param: state&code order.php
 
+User-agent: Yandex
+Clean-param: ref /order.php
+
 # Directories
 Disallow: /core/
 
@@ -38,3 +41,4 @@ Disallow: /?*
 
 # Paths (no clean URLs)
 Disallow: /index.php/admin/
+Disallow: https://rashchet-pensii.nedicom.ru/order.php*

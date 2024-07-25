@@ -1,6 +1,6 @@
 <?php
 	$description ='Результат расчета после заполнения формы';
-	$title = 'Результат расчета';
+	$title = 'Результат расчета пенсии онлайн 2024';
 	include 'src/meta.php';
 	include 'src/header.php';
     	
@@ -259,4 +259,3 @@
 	}
 	
 	include 'src/footer.php';
-?>

@@ -1,6 +1,6 @@
 <?php
-	$description ='Ваш личный кабинет на этом сайте';
-	$title = 'Заказ расчета пенсии';
+	$description ='Ваш личный кабинет пенсионера';
+	$title = 'Личный кабинет пенсионера';
 	include 'src/meta.php';
 	include 'src/header.php';
 
