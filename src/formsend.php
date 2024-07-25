@@ -19,3 +19,4 @@ curl_setopt_array($ch, $optArray);
 $result = curl_exec($ch);
 curl_close($ch);
 header('Location: /src/welldonepage.php');
+exit;
