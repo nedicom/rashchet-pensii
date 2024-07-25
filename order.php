@@ -28,8 +28,7 @@
 			//$invid = 280659189;
 			$invid = $_SESSION['client_id'];
 			$query = "SELECT * FROM `users` WHERE client_id = $invid";
-			$connect = mysqli_connect("localhost","pfr","pfr","pfr");
-			$result   = mysqli_query($connect, $query);
+			$result   = mysqli_query($con, $query);
 
 			$row = $result->fetch_array();
 			
@@ -46,7 +45,7 @@
 					$new_arr[$key] = $value;
 				}
 			}
-			print_r($row);
+
 			unset($new_arr[0]);
 			
 			/*if ($row['pay'] < 2){
