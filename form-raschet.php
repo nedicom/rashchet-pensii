@@ -32,8 +32,8 @@
 echo '
 
 		<div class="text-center mb-3" id="choise">
-			<a href="/raschetpage.php/#choise" class="d-inline-flex m-1 btn btn-primary btn-lg  d-flex" >простой режим</a>
-			<a href="/prostoy-raschet.php/#choise" class="d-inline-flex m-1 btn btn-primary btn-lg d-flex disabled" role="button" aria-disabled="true">экспертный режим</a>
+			<a href="/raschetpage.php#choise" class="d-inline-flex m-1 btn btn-primary btn-lg  d-flex" >простой режим</a>
+			<a href="/prostoy-raschet.php#choise" class="d-inline-flex m-1 btn btn-primary btn-lg d-flex disabled" role="button" aria-disabled="true">экспертный режим</a>
 			<a href="/orderuslugi.php" class="d-inline-flex m-1 btn btn-secondary btn-lg d-flex" role="button" >платная консультация</a>
 		</div>
 
