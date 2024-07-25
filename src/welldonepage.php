@@ -6,7 +6,7 @@
 	
 	include 'src/header.php';
 	
-    echo  'успешно';
+    
 
 	include 'src/footer.php';
 	
