@@ -27,14 +27,12 @@
 			*/
 			//$invid = 280659189;
 			$invid = $_SESSION['client_id'];
-
-			echo $invid;
 			$query = "SELECT * FROM `users` WHERE client_id = $invid";
-			$result   = mysqli_query($con, $query);
-			print_r($result);
+			$connect = mysqli_connect("localhost","pfr","pfr","pfr");
+			$result   = mysqli_query($connect, $query);
+
 			$row = $result->fetch_array();
 			
-			print_r($row);
 			//создаем массив показателей
 			$arr_keys = array('sk' => 'Стажевый коэффциент', 'zp' => 'Зарплата за 5 лет (или 2 года до 2002)', 
 			'szp'  => 'Средняя зарплата по стране', 'pns'  => 'Пропорция неполного стажа', 'T'  => 'Ожидаемый период выплаты',
