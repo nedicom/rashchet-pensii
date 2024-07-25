@@ -9,7 +9,7 @@
 			<h1 class="display-5 fw-bold">Личный кабинет</h1>
 			<div class="col-lg-6 mx-auto">';
 	
-		if(empty($_SESSION['client_id'])){			
+	if(empty($_SESSION['client_id'])){			
 			echo '
 			<p itemprop="description" class="lead mt-3">Для получения доступа к показателям авторизируйтесь на сайте</p>
 			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center"><a href="https://oauth.yandex.ru/authorize?client_id=f63f07d2b06d40dd849eb6aeb83f8a1d&amp;redirect_uri=https://rashchet-pensii.nedicom.ru/order.php&amp;response_type=code&amp;state=123" 
@@ -18,18 +18,23 @@
 		}
 		
 		else{
-			$merchant_login = "nedicom";
+			/*$merchant_login = "nedicom";
 			$password_1 = "MlyF3G73kgfx0xNMty2m";          
-			$description = "Расчет пенсии онлайн";
-			$invid = ($_SESSION['client_id']);
+			$description = "Расчет пенсии онлайн";			
 			$out_sum = "1000.00";
 			$signature_value = md5("$merchant_login:$out_sum:$invid:$password_1");
 			$url = "https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=".$merchant_login."&out_sum=".$out_sum."&InvId=".$invid."&Description=".$description."&SignatureValue=".$signature_value."";
-			 
+			*/
+			//$invid = 280659189;
+			$invid = ($_SESSION['client_id']);
+
 			$query = "SELECT * FROM `users` WHERE client_id = $invid";
 			$result   = mysqli_query($con, $query);
+		
 			$row = $result->fetch_array();
 			
+			//print_r($row);
+			//создаем массив показателей
 			$arr_keys = array('sk' => 'Стажевый коэффциент', 'zp' => 'Зарплата за 5 лет (или 2 года до 2002)', 
 			'szp'  => 'Средняя зарплата по стране', 'pns'  => 'Пропорция неполного стажа', 'T'  => 'Ожидаемый период выплаты',
 			'kv'  => 'Коэффициент валорозации', 'pk2'  => 'Пенсионный капитал с 2002 года', 
@@ -42,10 +47,10 @@
 					$new_arr[$key] = $value;
 				}
 			}
-			
+			print_r($row);
 			unset($new_arr[0]);
 			
-			if ($row['pay'] < 2){
+			/*if ($row['pay'] < 2){
 			echo '
 				<div class="mx-auto">
 					<p itemprop="description" class="lead mt-3">Теперь Вам доступно приобретение расчета</p>
@@ -73,6 +78,7 @@
 					<p>номер заказа - '.$invid.'</p></div>';
 			}
 				else{
+			*/	
 					echo '
 					<div class="d-grid gap-2 col-6 mx-auto">
 					<p itemprop="description" class="lead mt-3">Скачать расчет могут только наши клиенты</p>
@@ -88,10 +94,8 @@
 							заново</a>
 						</div>	
 					</div>
-					';
-					
-
-					}
+					';		
+					//}
 					
 					echo '<h3>Ваши показатели</h3>
 						  <p>Чтобы изменить показатели сделайте расчет заново</p>';
@@ -112,4 +116,3 @@
 			}
 
 	include 'src/footer.php';
-  	?>
