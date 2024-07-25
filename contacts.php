@@ -17,6 +17,3 @@ echo '
 
 
 	include 'src/footer.php';
-	
-  	?>
-	
