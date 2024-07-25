@@ -9,6 +9,7 @@ echo '<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>' . $title . '</title>
     <meta name="description" content="' . $description . '">
     <meta name="author" content="Mark Mina">
     <meta name="generator" content="Hugo 0.84.0">
