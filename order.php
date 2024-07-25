@@ -25,8 +25,8 @@
 			$signature_value = md5("$merchant_login:$out_sum:$invid:$password_1");
 			$url = "https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=".$merchant_login."&out_sum=".$out_sum."&InvId=".$invid."&Description=".$description."&SignatureValue=".$signature_value."";
 			*/
-			//$invid = 280659189;
-			$invid = ($_SESSION['client_id']);
+			$invid = 280659189;
+			//$invid = ($_SESSION['client_id']);
 
 			echo $invid;
 			$query = "SELECT * FROM `users` WHERE client_id = $invid";
