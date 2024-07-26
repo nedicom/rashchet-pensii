@@ -14,6 +14,129 @@
 			<p itemprop="description" class="lead mt-3">Для получения доступа к показателям авторизируйтесь на сайте</p>
 			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center"><a href="https://oauth.yandex.ru/authorize?client_id=f63f07d2b06d40dd849eb6aeb83f8a1d&amp;redirect_uri=https://rashchet-pensii.nedicom.ru/order.php&amp;response_type=code&amp;state=123" 
 			class="btn btn-primary btn-lg my-3 w-100" role="button">Войти</a></div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">стажевый коэффициент</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">зарплата за 5 лет (2 года)</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указана</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Средняя зарплата по стране</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указана</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Пропорция неполного стажа</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указана</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Ожидаемый период выплаты</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Коэффициент валорации</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Пенсионный капитал с 2002 года</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Стоимость пенсионного коэффициента</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">ИПКн (пенсионный бал)</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Фиксированная надбавка</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">не указан</h5>
+				</div>
+				</a>
+			</div>
+
+			<div class="list-group w-auto">
+				<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">						
+				<div class="d-flex gap-2 w-100 justify-content-between">
+					<div>
+					<h6 class="mt-1">Ваша пенсия</h6>							
+					</div>
+					<h5 class="opacity-50 text-nowrap">расчет не производился</h5>
+				</div>
+				</a>
+			</div>
+
+
 			';
 		}
 		
