@@ -41,4 +41,4 @@ Disallow: /?*
 
 # Paths (no clean URLs)
 Disallow: /index.php/admin/
-Disallow: https://rashchet-pensii.nedicom.ru/order.php*
+Disallow: /order.php*
