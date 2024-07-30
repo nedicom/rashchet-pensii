@@ -38,7 +38,14 @@ Disallow: /README.txt
 # Paths (clean URLs)
 Disallow: /admin/
 Disallow: /?*
+Disallow: /index.php
 
 # Paths (no clean URLs)
 Disallow: /index.php/admin/
 Disallow: /order.php*
+Disallow: /prostoy-raschet.php*
+Disallow: /raschetpage.php*
+Disallow: /examples*
+Disallow: /obrazec.php*
+
+
