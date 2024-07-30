@@ -35,6 +35,14 @@ echo '<!doctype html>
 	<noscript><div><img src="https://mc.yandex.ru/watch/89320133" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
 
+  <!-- Varioqub experiments -->
+    <script type="text/javascript">
+    (function(e, x, pe, r, i, me, nt){
+    e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},
+    me=x.createElement(pe),me.async=1,me.src=r,nt=x.getElementsByTagName(pe)[0],nt.parentNode.insertBefore(me,nt)})
+    (window, document, "script", "https://abt.s3.yandex.net/expjs/latest/exp.js", "ymab");
+    ymab("metrika.89320133", "init"/*, {clientFeatures}, {callback}*/);
+    </script>
 
     <title>' . $title . '</title>
 
