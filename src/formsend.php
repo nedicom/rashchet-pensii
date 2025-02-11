@@ -8,7 +8,7 @@ $message = "Привет. \nУ нас заявочка с сайта расче�
 $text = urlencode($message);
 //$url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id=sfrlaw&text={$text}";
 
-$url = "https://api.telegram.org/bot7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw/sendMessage?chat_id=markandNastya&text=test"
+$url = "https://api.telegram.org/bot7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw/sendMessage?chat_id=markandNastya&text=test";
 
 $ch = curl_init();
 $optArray = array(
