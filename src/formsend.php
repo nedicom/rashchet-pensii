@@ -4,7 +4,7 @@ $phone = $_POST['phone'];
 $chat_name = "@MarkAndNastya";
 $token = "7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw";
 $message = "Привет. \nУ нас заявочка с сайта расчет пенсии.\nИмя клиента - $name\n телефон - $phone\n Всем хорошего дня!";
-echo"$message";
+
 $text = urlencode($message);
 //$url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id=sfrlaw&text={$text}";
 
