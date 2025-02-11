@@ -6,9 +6,9 @@ $token = "7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw";
 $message = "Привет. \nУ нас заявочка с сайта расчет пенсии.\nИмя клиента - $name\n телефон - $phone\n Всем хорошего дня!";
 
 $text = urlencode($message);
-$url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id=sfrlaw&text={$text}";
+//$url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id=sfrlaw&text={$text}";
 
-//https://api.telegram.org/bot7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw/sendMessage?chat_id=markandNastya&text=test
+$url = "https://api.telegram.org/bot7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw/sendMessage?chat_id=markandNastya&text=test"
 
 $ch = curl_init();
 $optArray = array(
@@ -17,6 +17,7 @@ $optArray = array(
 );
 curl_setopt_array($ch, $optArray);
 $result = curl_exec($ch);
+
 curl_close($ch);
 
 
