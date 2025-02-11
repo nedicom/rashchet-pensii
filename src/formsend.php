@@ -9,12 +9,12 @@ $text = urlencode($message);
 //$url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id=sfrlaw&text={$text}";
 
 $url = "https://api.telegram.org/bot7471342210:AAEDkhuLXZootfnjOjDWpbKoeNLSuxzJhUw/sendMessage?chat_id=markandNastya&text=test";
-
+echo"$url";
 $ch = curl_init();
 $optArray = [CURLOPT_URL => $url, CURLOPT_RETURNTRANSFER => true];
 curl_setopt_array($ch, $optArray);
 $result = curl_exec($ch);
-
+echo"$result";
 curl_close($ch);
 
 /*
