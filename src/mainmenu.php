@@ -10,7 +10,7 @@ echo '
                             <div class="text-center text-xxl-start">
                                 <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Кравцова &middot; Анастасия &middot; Марк  &middot; Мина</div></div>
                                 <div class="fs-3 fw-light text-muted"><img src="img/favicon.svg"  width="54px"></div>
-                                <div class="fs-3 fw-light text-muted">Калькулятор пенсии 2024 онлайн бесплатно</div> 
+                                <div class="fs-3 fw-light text-muted">Калькулятор пенсии 2025 онлайн бесплатно</div> 
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Давайте узнаем, что не так с Вашей пенсией</span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="raschetpage.php">Платят меньше, чем должны</a>
@@ -139,9 +139,31 @@ echo '
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+
+                           <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Мы делаем расчеты и защищаем пенсионеров судах</h1>
+    <div class="col-lg-12 mx-auto">
+      <p class="lead mb-4">Адвокатский кабинет "Мина М. А." начала работать с 2015 года в Республике Крым. 
+      В то время в Крыму возникало очень много проблем с пенсионным обеспечением новых граждан и юристы в этой категории были востребованы.</p>
+      <p class="lead mb-4">Чтобы иметь возможность заранее прогнозировать целесообразность судебных процессов, в случае, если пенсионеру назначили пенсию меньше, нам пришлось погрузиться в изучение методик расчетов пенсии.</p>
+     <p class="lead mb-4"> С той поры мы все время улучшали способы расчета и заранее можем сказать правильно ли рассчитана пенсия, насколько она увеличится, если включить в расчет какой-то период, имеет ли смысл жаловаться или идти в суд, что делать, если пенсию платят меньше, чем должны и как правильно обратиться в СФР для перерасчета.</p>
+     <p class="lead mb-4"> Сейчас Вы можете прийти к нам на консультацию в Республике Крым, Москве, Краснодарском крае, Курской области и Алтайском крае. По другим регионам мы работаем дистанционно.<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"></p>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="img/blanc.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="blance" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
                         </div>
                     </div>
                 </div>
             </header>
 		';
-?>

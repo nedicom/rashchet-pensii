@@ -1,6 +1,6 @@
 <?php
 	$description ='Результат расчета после заполнения формы';
-	$title = 'Результат расчета пенсии онлайн 2024';
+	$title = 'Результат расчета пенсии онлайн 2025';
 	include 'src/meta.php';
 	include 'src/header.php';
     	
@@ -229,7 +229,7 @@
 
 									<div class="col-md-6 p-3 mx-auto">									
 										<h4 class="mb-3 fw-normal">Нужна помощь? </br>Обращайтесь </h4>									
-										<a href="orderuslugi.php" class="my-5 d-inline-flex m-1 btn btn-secondary btn-lg d-flex" role="button" >платная консультация</a>
+										<a href="orderuslugi.php" class="my-5 d-inline-flex m-1 btn btn-secondary btn-lg d-flex" role="button" >консультация</a>
 									</div>
 								</div>	
 									';

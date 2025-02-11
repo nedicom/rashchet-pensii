@@ -5,14 +5,14 @@ echo '
   <header>
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
       <a href="../../../../index.html" class="d-flex align-items-center text-dark text-decoration-none">
-        <span class="fs-4">Как Вам удобнее заказать услугу?</span>
+        <span class="fs-4">Как Вам удобнее заказать консультацию?</span>
       </a>
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none"  href="https://www.t.me/help_pensioner_bot"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+        <a class="me-3 py-2 text-dark text-decoration-none"  href="/help_pensioner_bot"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
         <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"></path><path fill="#b0bec5" d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"></path><path fill="#cfd8dc" d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"></path>
         </svg></a>
-        <a class="me-3 py-2 text-dark text-decoration-none"  href="tel: +79788838978"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+        <a class="me-3 py-2 text-dark text-decoration-none"  href="tel: +79295924481"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
         <path fill="#0f0" d="M13,42h22c3.866,0,7-3.134,7-7V13c0-3.866-3.134-7-7-7H13c-3.866,0-7,3.134-7,7v22	C6,38.866,9.134,42,13,42z"></path><path fill="#fff" d="M35.45,31.041l-4.612-3.051c-0.563-0.341-1.267-0.347-1.836-0.017c0,0,0,0-1.978,1.153	c-0.265,0.154-0.52,0.183-0.726,0.145c-0.262-0.048-0.442-0.191-0.454-0.201c-1.087-0.797-2.357-1.852-3.711-3.205	c-1.353-1.353-2.408-2.623-3.205-3.711c-0.009-0.013-0.153-0.193-0.201-0.454c-0.037-0.206-0.009-0.46,0.145-0.726	c1.153-1.978,1.153-1.978,1.153-1.978c0.331-0.569,0.324-1.274-0.017-1.836l-3.051-4.612c-0.378-0.571-1.151-0.722-1.714-0.332	c0,0-1.445,0.989-1.922,1.325c-0.764,0.538-1.01,1.356-1.011,2.496c-0.002,1.604,1.38,6.629,7.201,12.45l0,0l0,0l0,0l0,0	c5.822,5.822,10.846,7.203,12.45,7.201c1.14-0.001,1.958-0.248,2.496-1.011c0.336-0.477,1.325-1.922,1.325-1.922	C36.172,32.192,36.022,31.419,35.45,31.041z"></path>
         </svg></a>
         <a class="me-3 py-2 text-dark text-decoration-none" href="#one"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
@@ -22,9 +22,8 @@ echo '
     </div>
 
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <p class="fs-5 text-muted">Начнем с консультации. Для начала обменяемся контактами. Далее Вас наберет секретарь и уточнит детали вопроса, возможно запросит документы.
-      После предварительного изучения мы выставим вам счет за консультацию. Обычно это стоит 1000 рублей. После оплаты Вы сможете
-      получить консультацию юриста и при необходимости заказать другие услуги
+      <p class="fs-5 text-muted">Начнем с консультации. Для начала обменяемся контактами. Далее Вас наберет помощник и уточнит детали вопроса, запросит документы.
+      После предварительного изучения мы предложим Вам услуги, утоним стоимость или сообщим о невозможности окаать помощь.
       </p>
     </div>
   </header>
@@ -42,7 +41,7 @@ echo '
               <li>для простого</li>
               <li>общения</li>
             </ul>
-            <a class="w-100 btn btn-lg btn-outline-primary" href="https://www.t.me/help_pensioner_bot" role="button">перейти в тг</a>
+            <a class="w-100 btn btn-lg btn-outline-primary" href="https://www.t.me/S_E_R_g_e_y22" role="button">перейти в тг</a>
           </div>
         </div>
       </div>
@@ -57,7 +56,7 @@ echo '
               <li>консультацию</li>
               <li>быстрее</li>
             </ul>
-            <a class="w-100 btn btn-lg btn-primary" href="tel: +79788838978" role="button">+7978 8838 978</a>
+            <a class="w-100 btn btn-lg btn-primary" href="tel: +79295924481" role="button">+7929 592 44 81</a>
           </div>
         </div>
       </div>
@@ -91,7 +90,6 @@ echo '
         Оставьте номер для связи чтобы убедится в профессионализме. Наверняка, Вы уже посетили 
         <a class="link-secondary" href="https://www.youtube.com/channel/UCgX-GlsXp3Ex77pnioKZTJg" target="_blank">наш youtube канал
 </a>
-        наш youtube канал
         и убедились в этом. </p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
@@ -121,12 +119,19 @@ echo '
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1">Официально и с гарантиями</h1>
         <p class="lead">Работаем только по договору. Это дает Вам возможность компенсировать судебные и иные расходы.
-        Юристы аккредитованные в компании специализируются на пенсионных делах. 
+        Специализируемся на пенсионных делах. 
         Вы и сами это видите, работая с нашим <a class="link-secondary" target="_blank" href="raschetpage.php"> 
         расчетом пенсий</a>.
+              <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="examples/zayavlenie.docx" download>Образец заявления</a></li>
+        <li><a class="link-secondary" href="examples/rasschet.docx" download>Образец расчета</a></li>
+        <li><a class="link-secondary" href="examples/schet.doc" download>Образец счета</a></li>
+        <li><a class="link-secondary" href="examples/soglashenie.docx" download>Образец соглашения</a></li>
+        <li><a class="link-secondary" href="examples/docs.docx" download>Документы для работы</a></li>         
+      </ul>
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-         <a class="w-100 btn btn-lg btn-outline-secondary" href="tel: +79788838978" role="button">+7978 8838 978</a>
+         <a class="w-100 btn btn-lg btn-outline-secondary" href="tel: +79295924481" role="button">+7929 592 44 81</a>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
@@ -142,7 +147,7 @@ echo '
       <p class="lead mb-4">
       Это позволяет оценить шансы при обращении в СФР и при обращении в суд. Проигрышные дела не нужны нам и Вам тем более</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <a class="w-100 btn btn-lg btn-outline-secondary" href="https://www.t.me/help_pensioner_bot" target="_blank" role="button">в Телеграм</a>
+        <a class="w-100 btn btn-lg btn-outline-secondary" href="https://www.t.me/S_E_R_g_e_y22" target="_blank" role="button">в Телеграм</a>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
