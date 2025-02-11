@@ -150,8 +150,8 @@ echo '
       <p class="lead mb-4">Чтобы иметь возможность заранее прогнозировать целесообразность судебных процессов, в случае, если пенсионеру назначили пенсию меньше, нам пришлось погрузиться в изучение методик расчетов пенсии.</p>
      <p class="lead mb-4"> С той поры мы все время улучшали способы расчета и заранее можем сказать правильно ли рассчитана пенсия, насколько она увеличится, если включить в расчет какой-то период, имеет ли смысл жаловаться или идти в суд, что делать, если пенсию платят меньше, чем должны и как правильно обратиться в СФР для перерасчета.</p>
      <p class="lead mb-4"> Сейчас Вы можете прийти к нам на консультацию в Республике Крым, Москве, Краснодарском крае, Курской области и Алтайском крае. По другим регионам мы работаем дистанционно.<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"></p>
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        <a href ="/orderuslugi.php" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">На консультацию</a>
+        <a href ="/prostoy-raschet.php#choise" type="button" class="btn btn-outline-secondary btn-lg px-4">Посчитать самому</a>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
