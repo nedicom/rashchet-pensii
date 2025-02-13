@@ -22,8 +22,8 @@ echo '
     </div>
 
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <p class="fs-5 text-muted">Начнем с консультации. Для начала обменяемся контактами. Далее Вас наберет помощник и уточнит детали вопроса, запросит документы.
-      После предварительного изучения мы предложим Вам услуги, утоним стоимость или сообщим о невозможности окаать помощь.
+      <p class="fs-5 text-muted">
+      После предварительного изучения Вашей ситуации мы предложим Вам услуги, уточним стоимость или сообщим о невозможности оказать помощь.
       </p>
     </div>
   </header>
@@ -95,11 +95,12 @@ echo '
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-light" action="src/formsend.php" method="post">
           <div class="form-floating mb-3">
-            <input type="phone" class="form-control" name="phone" id="floatingInput" placeholder="8 888 8888 888" required>
+            <input type="phone" class="form-control" name="phone" id="floatingInput" placeholder="8 888 8888 888" required minlength="7" maxlength="15">
             <label for="floatingInput">Телефон</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="name" id="floatingPassword" placeholder="Имя" required>
+            <input type="text" class="form-control" name="name" id="floatingPassword" placeholder="Имя" required
+            minlength="3" maxlength="30">
             <label for="floatingPassword">Ваше имя</label>
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">Отправить</button>
